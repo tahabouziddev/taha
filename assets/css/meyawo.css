@@ -11133,14 +11133,23 @@ p {
 
 .service-card {
   position: relative;
-  min-height: 230px;
+  min-height: 300px;
   border: 1px solid #dee2e6;
   overflow: hidden;
   border-radius: 3px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+.service-card:hover{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
 }
 
 .service-card .body {
   padding: 10px;
+  
 }
 
 .service-card .body img.icon {
@@ -11159,12 +11168,14 @@ p {
 }
 
 .service-card .body .subtitle {
-  position: absolute;
-  bottom: -100%;
-  opacity: 0;
   visibility: hidden;
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust the width based on your design */
+  text-align: center; /* Center the text horizontally within the element */
+ 
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -11181,9 +11192,10 @@ p {
 }
 
 .service-card:hover .body .subtitle {
-  bottom: 7px;
-  opacity: 1;
+
   visibility: visible;
+
+  
 }
 
 .service-card:hover .subtitlenot{
