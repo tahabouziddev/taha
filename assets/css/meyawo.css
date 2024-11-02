@@ -11209,6 +11209,22 @@ display:none;
   position: relative;
   overflow: hidden;
 }
+    .portfolio-wrapper {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .portfolio-wrapper .row {
+        display: flex;
+    }
+
+    .service-card {
+        margin: 10px;
+    }
+
+    .scroll-buttons {
+        margin-top: 20px;
+    }
 
 .portfolio-card .portfolio-card-img {
   width: 100%;
